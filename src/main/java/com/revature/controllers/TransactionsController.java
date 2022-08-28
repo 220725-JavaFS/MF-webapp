@@ -17,7 +17,6 @@ import org.slf4j.LoggerFactory;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.models.Account;
 import com.revature.models.Transactions;
-import com.revature.models.Users;
 import com.revature.services.ORMService;
 
 public class TransactionsController extends HttpServlet {

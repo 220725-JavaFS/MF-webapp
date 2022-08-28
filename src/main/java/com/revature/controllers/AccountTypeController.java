@@ -21,7 +21,7 @@ import com.revature.services.ORMService;
 public class AccountTypeController extends HttpServlet {
 
 	private ObjectMapper objectMapper = new ObjectMapper();
-	private static Logger log = LoggerFactory.getLogger(UserController.class);
+	private static Logger log = LoggerFactory.getLogger(AccountTypeController.class);
 	private ORMService ormService = new ORMService();
 
 	@Override

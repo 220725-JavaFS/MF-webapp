@@ -1,15 +1,22 @@
 package com.revature.services;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 import com.revature.utils.ORMUtil;
 
 public class ORMService {
-	private ORM orm = ORMUtil.getORM();
+	private ORM orm;
 
-	public <T> List<T> getObjects(Class<T> clazz) {
+	public ORMService() {
 		orm = ORMUtil.getORM();
+	}
+	
+	//used to set mock orm 
+	public ORMService(ORM orm) {
+		this.orm = orm;
+	}
+	
+	public <T> List<T> getObjects(Class<T> clazz) {
 		if(orm == null) {
 			System.out.println("oops");
 		}
