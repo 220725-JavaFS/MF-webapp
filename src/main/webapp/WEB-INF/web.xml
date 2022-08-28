@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<display-name>MF-webapp</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>UserController</servlet-name>
+		<servlet-class>com.revature.controllers.UserController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserController</servlet-name>
+		<url-pattern>/users</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AccountController</servlet-name>
+		<servlet-class>com.revature.controllers.AccountController
+		</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AccountController</servlet-name>
+		<url-pattern>/account/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AccountTypeController</servlet-name>
+		<servlet-class>com.revature.controllers.AccountTypeController
+		</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AccountTypeController</servlet-name>
+		<url-pattern>/accounttype</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PermissionTypeController</servlet-name>
+		<servlet-class>com.revature.controllers.PermissionTypeController
+		</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PermissionTypeController</servlet-name>
+		<url-pattern>/permissiontype</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>TransactionsController</servlet-name>
+		<servlet-class>com.revature.controllers.TransactionsController
+		</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>TransactionsController</servlet-name>
+		<url-pattern>/transactions/*</url-pattern>
+	</servlet-mapping>
+
+</web-app>
